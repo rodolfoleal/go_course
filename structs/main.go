@@ -30,6 +30,13 @@ func main() {
 	alex.print()
 	joao.print()
 
+	rodolfo.updateName("Ricardo")
+	rodolfo.print()
+
+}
+
+func (p *person) updateName(newName string) {
+	p.firstName = newName
 }
 
 func (p person) print() {
