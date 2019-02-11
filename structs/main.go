@@ -11,5 +11,11 @@ func main() {
 	rodolfo := person{"Rodolfo", "Leal"}
 	alex := person{firstName: "Alex", lastName: "Anderson"}
 
-	fmt.Println(rodolfo, alex)
+	var joao person
+
+	joao.firstName = "Joao"
+	joao.lastName = "Silva"
+
+	fmt.Println(rodolfo, alex, joao)
+	fmt.Printf("%+v", alex)
 }
