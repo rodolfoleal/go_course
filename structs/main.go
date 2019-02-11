@@ -5,7 +5,7 @@ import "fmt"
 type person struct {
 	firstName string
 	lastName  string
-	contact   contatInfo
+	contatInfo
 }
 type contatInfo struct {
 	email string
@@ -17,13 +17,14 @@ func main() {
 	rodolfo := person{"Rodolfo", "Leal", contact}
 
 	alex := person{firstName: "Alex",
-		lastName: "Anderson",
-		contact:  contatInfo{"alex@mail.com", 672536}}
+		lastName:   "Anderson",
+		contatInfo: contatInfo{"alex@mail.com", 672536}}
 
 	var joao person
 
 	joao.firstName = "Joao"
 	joao.lastName = "Silva"
+	joao.contatInfo = contatInfo{email: "jao@mail.com", zip: 763782}
 
 	fmt.Println(rodolfo, alex, joao)
 	fmt.Printf("%+v", alex)
