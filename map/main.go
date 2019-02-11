@@ -19,7 +19,7 @@ func main() {
 
 	delete(colors, "white")
 
-	fmt.Print(colors)
+	printMap(colors)
 }
 
 func printMap(c map[string]string) {
