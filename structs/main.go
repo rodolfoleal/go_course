@@ -26,6 +26,12 @@ func main() {
 	joao.lastName = "Silva"
 	joao.contatInfo = contatInfo{email: "jao@mail.com", zip: 763782}
 
-	fmt.Println(rodolfo, alex, joao)
-	fmt.Printf("%+v", alex)
+	rodolfo.print()
+	alex.print()
+	joao.print()
+
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
