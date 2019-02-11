@@ -5,11 +5,20 @@ import "fmt"
 type person struct {
 	firstName string
 	lastName  string
+	contact   contatInfo
+}
+type contatInfo struct {
+	email string
+	zip   int
 }
 
 func main() {
-	rodolfo := person{"Rodolfo", "Leal"}
-	alex := person{firstName: "Alex", lastName: "Anderson"}
+	contact := contatInfo{"rodolfo@gmail.com", 12345}
+	rodolfo := person{"Rodolfo", "Leal", contact}
+
+	alex := person{firstName: "Alex",
+		lastName: "Anderson",
+		contact:  contatInfo{"alex@mail.com", 672536}}
 
 	var joao person
 
